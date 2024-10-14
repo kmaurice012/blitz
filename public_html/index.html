@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="utf-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Start marketing with Blitz Vision.">
     <meta name="author" content="Devcrud">
@@ -9,8 +10,9 @@
     <!-- font icons -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <!-- Bootstrap + LeadMark main styles -->
-	<link rel="stylesheet" href="assets/css/leadmark.css">
+    <link rel="stylesheet" href="assets/css/leadmark.css">
 </head>
+
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 
     <!-- page Navigation -->
@@ -19,11 +21,13 @@
             <a class="navbar-brand" href="/">
                 <img style="width: 150px;" src="assets/imgs/logo.png" alt="">
             </a>
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">                     
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="/service.html">Our Service</a>
                     </li>
@@ -47,84 +51,256 @@
         </div>
     </nav>
     <!-- End Of Second Navigation -->
-<style>
-    
-.stack {
-  display: grid;
-  grid-template-columns: 1fr;
-}
+    <style>
+        .stack {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
 
-.stack span {
-  /* font-weight: bold; */
-  grid-row-start: 1;
-  grid-column-start: 1;
-  /* font-size: 4rem; */
-  --stack-height: calc(100% / var(--stacks) - 1px);
-  --inverse-index: calc(calc(var(--stacks) - 1) - var(--index));
-  --clip-top: calc(var(--stack-height) * var(--index));
-  --clip-bottom: calc(var(--stack-height) * var(--inverse-index));
-  clip-path: inset(var(--clip-top) 0 var(--clip-bottom) 0);
-  animation: stack 340ms cubic-bezier(.46,.29,0,1.24) 1 backwards calc(var(--index) * 120ms), glitch 2s ease infinite 2s alternate-reverse;
-}
+        .stack span {
+            /* font-weight: bold; */
+            grid-row-start: 1;
+            grid-column-start: 1;
+            /* font-size: 4rem; */
+            --stack-height: calc(100% / var(--stacks) - 1px);
+            --inverse-index: calc(calc(var(--stacks) - 1) - var(--index));
+            --clip-top: calc(var(--stack-height) * var(--index));
+            --clip-bottom: calc(var(--stack-height) * var(--inverse-index));
+            clip-path: inset(var(--clip-top) 0 var(--clip-bottom) 0);
+            animation: stack 340ms cubic-bezier(.46, .29, 0, 1.24) 1 backwards calc(var(--index) * 120ms), glitch 2s ease infinite 2s alternate-reverse;
+        }
 
-.stack span:nth-child(odd) { --glitch-translate: 8px; }
-.stack span:nth-child(even) { --glitch-translate: -8px; }
+        .stack span:nth-child(odd) {
+            --glitch-translate: 8px;
+        }
 
-@keyframes stack {
-  0% {
-    opacity: 0;
-    transform: translateX(-50%);
-    text-shadow: -2px 3px 0 red, 2px -3px 0 blue;
-  };
-  60% {
-    opacity: 0.5;
-    transform: translateX(50%);
-  }
-  80% {
-    transform: none;
-    opacity: 1;
-    text-shadow: 2px -3px 0 red, -2px 3px 0 blue;
-  }
-  100% {
-    text-shadow: none;
-  }
-}
+        .stack span:nth-child(even) {
+            --glitch-translate: -8px;
+        }
 
-@keyframes glitch {
-  0% {
-    text-shadow: -2px 3px 0 red, 2px -3px 0 blue;
-    transform: translate(var(--glitch-translate));
-  }
-  2% {
-    text-shadow: 2px -3px 0 red, -2px 3px 0 blue;
-  }
-  4%, 100% {  text-shadow: none; transform: none; }
-}
+        @keyframes stack {
+            0% {
+                opacity: 0;
+                transform: translateX(-50%);
+                text-shadow: -2px 3px 0 red, 2px -3px 0 blue;
+            }
 
-.typing-demo {
-  width: 22ch;
-  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid;
-  /* font-family: monospace; */
-  font-size: 2em;
-}
+            ;
 
-@keyframes typing {
-  from {
-    width: 0
-  }
-}
-    
-@keyframes blink {
-  50% {
-    border-color: transparent
-  }
-}
+            60% {
+                opacity: 0.5;
+                transform: translateX(50%);
+            }
+
+            80% {
+                transform: none;
+                opacity: 1;
+                text-shadow: 2px -3px 0 red, -2px 3px 0 blue;
+            }
+
+            100% {
+                text-shadow: none;
+            }
+        }
+
+        @keyframes glitch {
+            0% {
+                text-shadow: -2px 3px 0 red, 2px -3px 0 blue;
+                transform: translate(var(--glitch-translate));
+            }
+
+            2% {
+                text-shadow: 2px -3px 0 red, -2px 3px 0 blue;
+            }
+
+            4%,
+            100% {
+                text-shadow: none;
+                transform: none;
+            }
+        }
+
+        .typing-demo {
+            width: 22ch;
+            animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 3px solid;
+            /* font-family: monospace; */
+            font-size: 2em;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0
+            }
+        }
+
+        @keyframes blink {
+            50% {
+                border-color: transparent
+            }
+        }
+
+        /* cds */
+
+        .ag-courses_box {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: start;
+            -ms-flex-align: start;
+            align-items: flex-start;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+
+            padding: 50px 0;
+        }
+
+        .ag-courses_item {
+            -ms-flex-preferred-size: calc(33.33333% - 30px);
+            flex-basis: calc(33.33333% - 30px);
+
+            margin: 0 15px 30px;
+
+            overflow: hidden;
+
+            border-radius: 28px;
+        }
+
+        .ag-courses-item_link {
+            display: block;
+            padding: 30px 20px;
+            background-color: #121212;
+
+            overflow: hidden;
+
+            position: relative;
+        }
+
+        .ag-courses-item_link:hover,
+        .ag-courses-item_link:hover .ag-courses-item_date {
+            text-decoration: none;
+            color: #FFF;
+        }
+
+        .ag-courses-item_link:hover .ag-courses-item_bg {
+            -webkit-transform: scale(10);
+            -ms-transform: scale(10);
+            transform: scale(10);
+        }
+
+        .ag-courses-item_title {
+            min-height: 87px;
+            margin: 0 0 25px;
+
+            overflow: hidden;
+
+            font-weight: bold;
+            font-size: 30px;
+            color: #FFF;
+
+            z-index: 2;
+            position: relative;
+        }
+
+        .ag-courses-item_date-box {
+            font-size: 18px;
+            color: #FFF;
+
+            z-index: 2;
+            position: relative;
+        }
+
+        .ag-courses-item_date {
+            font-weight: bold;
+            color: #f9b234;
+
+            -webkit-transition: color .5s ease;
+            -o-transition: color .5s ease;
+            transition: color .5s ease
+        }
+
+        .ag-courses-item_bg {
+            height: 128px;
+            width: 128px;
+            background-color: #f9b234;
+
+            z-index: 1;
+            position: absolute;
+            top: -75px;
+            right: -75px;
+
+            border-radius: 50%;
+
+            -webkit-transition: all .5s ease;
+            -o-transition: all .5s ease;
+            transition: all .5s ease;
+        }
+
+        .ag-courses_item:nth-child(2n) .ag-courses-item_bg {
+            background-color: #3ecd5e;
+        }
+
+        .ag-courses_item:nth-child(3n) .ag-courses-item_bg {
+            background-color: #e44002;
+        }
+
+        .ag-courses_item:nth-child(4n) .ag-courses-item_bg {
+            background-color: #952aff;
+        }
+
+        .ag-courses_item:nth-child(5n) .ag-courses-item_bg {
+            background-color: #cd3e94;
+        }
+
+        .ag-courses_item:nth-child(6n) .ag-courses-item_bg {
+            background-color: #4c49ea;
+        }
 
 
-</style>
+
+        @media only screen and (max-width: 979px) {
+            .ag-courses_item {
+                -ms-flex-preferred-size: calc(50% - 30px);
+                flex-basis: calc(50% - 30px);
+            }
+
+            .ag-courses-item_title {
+                font-size: 24px;
+            }
+        }
+
+        @media only screen and (max-width: 767px) {
+            .ag-format-container {
+                width: 96%;
+            }
+
+        }
+
+        @media only screen and (max-width: 639px) {
+            .ag-courses_item {
+                -ms-flex-preferred-size: 100%;
+                flex-basis: 100%;
+            }
+
+            .ag-courses-item_title {
+                min-height: 72px;
+                line-height: 1;
+
+                font-size: 24px;
+            }
+
+            .ag-courses-item_link {
+                padding: 22px 40px;
+            }
+
+            .ag-courses-item_date-box {
+                font-size: 16px;
+            }
+
+        }
+    </style>
     <!-- Page Header -->
     <header class="header">
         <div class="overlay">
@@ -132,61 +308,94 @@
                 <span class="subtitle" style="--index: 0;">Blitz Vision</span>
                 <span class="subtitle" style="--index: 1;">Blitz Vision</span>
                 <span class="subtitle" style="--index: 2;">Blitz Vision</span>
-              </div>
-            <h1 class="title typing-demo" style="text-align: center;"> Engage, Inspire, Impact</h1>  
-        </div>  
+            </div>
+            <h1 class="title typing-demo" style="text-align: center;"> Engage, Inspire, Impact</h1>
+        </div>
         <div class="shape">
             <svg viewBox="0 0 1500 200">
-                <path d="m 0,240 h 1500.4828 v -71.92164 c 0,0 -286.2763,-81.79324 -743.19024,-81.79324 C 300.37862,86.28512 0,168.07836 0,168.07836 Z"/>
+                <path
+                    d="m 0,240 h 1500.4828 v -71.92164 c 0,0 -286.2763,-81.79324 -743.19024,-81.79324 C 300.37862,86.28512 0,168.07836 0,168.07836 Z" />
             </svg>
-        </div>  
-        <div class="mouse-icon"><div class="wheel"></div></div>
+        </div>
+        <div class="mouse-icon">
+            <div class="wheel"></div>
+        </div>
     </header>
     <!-- End Of Page Header -->
 
     <!-- Service Section -->
-    <section  id="service" class="section pt-0">
+    <section id="service" class="section pt-3">
         <div class="container">
-            <h6 class="section-title text-center">Our Service</h6>
-            <h6 class="section-subtitle text-center mb-5 pb-3">
-                At Blitz Vision, we believe in the power of innovation to transform the way brands connect with audiences. As a cutting-edge digital out-of-home (DOOH) advertising company, we specialize in delivering dynamic, high-impact digital displays that captivate, engage, and drive real results. We bring your brand’s message to life, ensuring it reaches the right audience at the right time.
-            </h6>
-
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card mb-4 mb-md-0">
-                        <div class="card-body">
-                            <small class="text-primary font-weight-bold">01</small>
-                            <h5 class="card-title mt-3"> Digital Billboard Advertising <h5>
-                            <p class="mb-0">Kenya's top choice for dynamic DOOH advertising is our digital billboards, strategically located across busy areas, offering flexibility in targeting specific audiences and real-time message delivery.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 mb-md-0">
-                        <div class="card-body">
-                            <small class="text-primary font-weight-bold">02</small>
-                            <h5 class="card-title mt-3">In-Mall Digital Displays<h5>
-                            <p class="mb-0">Our in-mall digital displays in Kenya engage shoppers with dynamic content, promoting your brand to active consumers, inspire purchases, and boost brand awareness.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 mb-md-0">
-                        <div class="card-body">
-                            <small class="text-primary font-weight-bold">03</small>
-                            <h5 class="card-title mt-3">Event-Based Advertising<h5>
-                            <p class="mb-0">Our event-based digital displays enable brands to engage large audiences at Kenya's top events, inspiring action during key moments with real-time digital capabilities.</p>
-                        </div>
-                    </div>
-                </div>              
+            <!-- <div style="line-height: 1.2; min-height: 50vh; display: grid; place-items: center; box-sizing: border-box;"> -->
+            <div
+                style="padding: 1rem; text-align: center; background: radial-gradient(circle at 1.4% 1.4%, #186cb8 .8%, transparent .8%), radial-gradient(circle at 5.5% 3%, #2a9a9f .45%, transparent .45%), radial-gradient(circle at 2.5% 3.5%, #f1b211 .5%, transparent .5%), radial-gradient(circle at 4.5% 1.2%, #e83611 .25%, transparent .25%), radial-gradient(circle at 98% 98%, #186cb8 .8%, transparent .8%), radial-gradient(circle at 95% 95%, #2a9a9f .45%, transparent .45%), radial-gradient(circle at 94.5% 97.5%, #f1b211 .5%, transparent .5%), radial-gradient(circle at 98.5% 95.5%, #e83611 .25%, transparent .25%);">
+                <h1
+                    style="font-family: 'Exo', sans-serif; font-size: 3vw; font-weight: 900; margin: auto; text-transform: uppercase; background: linear-gradient(219deg, #186cb8 19%, transparent 19%, transparent 20%, #2a9a9f 20%, #2a9a9f 39%, transparent 39%, transparent 40%, #f1b211 40%, #f1b211 59%, transparent 59%, transparent 60%, #e83611 60%, #e83611 79%, transparent 79%, transparent 80%, #f9002f 80%); background-clip: text; -webkit-background-clip: text; color: transparent;">
+                    Keep pushing forward.<br>We've got your back
+                </h1>
             </div>
-            <button  class="btn btn-primary rounded w-md mt-3">More...</button>
+            <!-- </div> -->
 
-            
+            <div class="ag-format-container">
+                <div class="ag-courses_box">
+                    <div class="ag-courses_item">
+                        <a href="#" class="ag-courses-item_link">
+                            <div class="ag-courses-item_bg"></div>
+                            <div class="ag-courses-item_title">
+                                Digital Billboard Advertising
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="ag-courses_item">
+                        <a href="#" class="ag-courses-item_link">
+                            <div class="ag-courses-item_bg"></div>
+                            <div class="ag-courses-item_title">
+                                In-Mall Digital Displays
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="ag-courses_item">
+                        <a href="#" class="ag-courses-item_link">
+                            <div class="ag-courses-item_bg"></div>
+                            <div class="ag-courses-item_title">
+                                Event-Based Advertising
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="ag-courses_item">
+                        <a href="#" class="ag-courses-item_link">
+                            <div class="ag-courses-item_bg"></div>
+                            <div class="ag-courses-item_title">
+                                Data-Driven Campaigns
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="ag-courses_item">
+                        <a href="#" class="ag-courses-item_link">
+                            <div class="ag-courses-item_bg"></div>
+                            <div class="ag-courses-item_title">
+                                Creative Content Production
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="ag-courses_item">
+                        <a href="#" class="ag-courses-item_link">
+                            <div class="ag-courses-item_bg"></div>
+                            <div class="ag-courses-item_title">
+                                Media Planning & Buying
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-        
     </section>
+
     <!-- End OF Service Section -->
 
     <!-- About Section -->
@@ -195,8 +404,10 @@
             <div class="row justify-content-between">
                 <div class="col-md-6 pr-md-5 mb-4 mb-md-0">
                     <h6 class="section-title mb-0">About Blitz Vision</h6>
-                    <!-- <h6 class="section-subtitle mb-4">Kenya’s choice for dynamic DOOH Advertising.</h6> -->
-                    <p >Blitz Vision was founded with a single goal in mind: to revolutionize outdoor advertising by harnessing the full potential of digital technology.  Our team of industry experts and creative minds is dedicated to pushing the boundaries of what’s possible in DOOH, delivering solutions that make brands stand out in a crowded marketplace.</p>
+                    <p>Blitz Vision was founded with a single goal in mind: to revolutionize outdoor advertising by
+                        harnessing the full potential of digital technology. Our team of industry experts and creative
+                        minds is dedicated to pushing the boundaries of what’s possible in DOOH, delivering solutions
+                        that make brands stand out in a crowded marketplace.</p>
                     <img src="assets/imgs/about.jpg" alt="" class="w-100 mt-3 shadow-sm">
                 </div>
                 <div class="col-md-6 pl-md-5">
@@ -208,7 +419,10 @@
                             <img src="assets/imgs/about-2.jpg" alt="" class="w-100 shadow-sm">
                         </div>
                         <div class="col-12 mt-4">
-                            <p> Our company's objective is to provide companies with creative, data-driven digital advertising solutions that improve exposure and engagement levels. Their goal is to transform static settings into dynamic digital experiences, revolutionizing African outdoor advertising. Our core values are:</p>
+                            <p> Our company's objective is to provide companies with creative, data-driven digital
+                                advertising solutions that improve exposure and engagement levels. Their goal is to
+                                transform static settings into dynamic digital experiences, revolutionizing African
+                                outdoor advertising. Our core values are:</p>
                             <ul class="list-unstyled">
                                 <li class="mb-2"><i class="ti-check mr-2 text-primary"></i>Integrity</li>
                                 <li class="mb-2"><i class="ti-check mr-2 text-primary"></i>Innovation</li>
@@ -217,7 +431,7 @@
                         </div>
                     </div>
                 </div>
-            </div>              
+            </div>
         </div>
     </section>
     <!-- End OF About Section -->
@@ -241,46 +455,50 @@
                     Web
                 </a>
             </div>
-            <div class="portfolio-container"> 
+            <div class="portfolio-container">
                 <div class="col-md-6 col-lg-4 web new">
                     <div class="portfolio-item">
-                        <img src="assets/imgs/web-1.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                        <img src="assets/imgs/web-1.jpg" class="img-fluid"
+                            alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
                         <div class="content-holder">
                             <a class="img-popup" href="assets/imgs/web-1.jpg"></a>
                             <div class="text-holder">
                                 <h6 class="title">WEB</h6>
                                 <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
                             </div>
-                        </div>   
-                    </div>             
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-6 col-lg-4 web new">
                     <div class="portfolio-item">
-                        <img src="assets/imgs/web-2.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                        <img src="assets/imgs/web-2.jpg" class="img-fluid"
+                            alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
                         <div class="content-holder">
                             <a class="img-popup" href="assets/imgs/web-2.jpg"></a>
                             <div class="text-holder">
                                 <h6 class="title">WEB</h6>
                                 <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
                             </div>
-                        </div> 
-                    </div>                         
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-6 col-lg-4 advertising new">
                     <div class="portfolio-item">
-                        <img src="assets/imgs/advertising-2.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                         
+                        <img src="assets/imgs/advertising-2.jpg" class="img-fluid"
+                            alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
                         <div class="content-holder">
                             <a class="img-popup" href="assets/imgs/advertising-2.jpg"></a>
                             <div class="text-holder">
                                 <h6 class="title">ADVERSTISING</h6>
                                 <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
                             </div>
-                        </div>    
-                    </div>              
-                </div> 
+                        </div>
+                    </div>
+                </div>
                 <div class="col-md-6 col-lg-4 web">
                     <div class="portfolio-item">
-                        <img src="assets/imgs/web-4.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                        <img src="assets/imgs/web-4.jpg" class="img-fluid"
+                            alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
                         <div class="content-holder">
                             <a class="img-popup" href="assets/imgs/web-4.jpg"></a>
                             <div class="text-holder">
@@ -288,12 +506,13 @@
                                 <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
                             </div>
                         </div>
-                    </div>                                                     
+                    </div>
                 </div>
 
-                <div class="col-md-6 col-lg-4 advertising"> 
+                <div class="col-md-6 col-lg-4 advertising">
                     <div class="portfolio-item">
-                        <img src="assets/imgs/advertising-1.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                               
+                        <img src="assets/imgs/advertising-1.jpg" class="img-fluid"
+                            alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
                         <div class="content-holder">
                             <a class="img-popup" href="assets/imgs/advertising-1.jpg"></a>
                             <div class="text-holder">
@@ -301,35 +520,38 @@
                                 <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
                             </div>
                         </div>
-                    </div>                                                       
-                </div> 
+                    </div>
+                </div>
                 <div class="col-md-6 col-lg-4 web new">
                     <div class="portfolio-item">
-                        <img src="assets/imgs/web-3.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">  
-                       <div class="content-holder">
+                        <img src="assets/imgs/web-3.jpg" class="img-fluid"
+                            alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                        <div class="content-holder">
                             <a class="img-popup" href="assets/imgs/web-3.jpg"></a>
                             <div class="text-holder">
                                 <h6 class="title">WEB</h6>
                                 <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
                             </div>
                         </div>
-                    </div>                                                     
+                    </div>
                 </div>
                 <div class="col-md-6 col-lg-4 advertising new">
                     <div class="portfolio-item">
-                        <img src="assets/imgs/advertising-3.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">       
-                       <div class="content-holder">
+                        <img src="assets/imgs/advertising-3.jpg" class="img-fluid"
+                            alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                        <div class="content-holder">
                             <a class="img-popup" href="assets/imgs/advertising-3.jpg"></a>
                             <div class="text-holder">
                                 <h6 class="title">ADVERSITING</h6>
                                 <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
                             </div>
                         </div>
-                    </div>                                                       
-                </div> 
-                <div class="col-md-6 col-lg-4 advertising new"> 
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 advertising new">
                     <div class="portfolio-item">
-                        <img src="assets/imgs/advertising-4.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">            
+                        <img src="assets/imgs/advertising-4.jpg" class="img-fluid"
+                            alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
                         <div class="content-holder">
                             <a class="img-popup" href="assets/imgs/advertising-4.jpg"></a>
                             <div class="text-holder">
@@ -338,23 +560,25 @@
                             </div>
                         </div>
                     </div>
-                            
-                </div> 
+
+                </div>
                 <div class="col-md-6 col-lg-4 branding new">
                     <div class="portfolio-item">
-                        <img src="assets/imgs/branding-1.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                        
+                        <img src="assets/imgs/branding-1.jpg" class="img-fluid"
+                            alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
                         <div class="content-holder">
                             <a class="img-popup" href="assets/imgs/branding-1.jpg"></a>
                             <div class="text-holder">
                                 <h6 class="title">BRANDING</h6>
                                 <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
                             </div>
-                        </div> 
+                        </div>
                     </div>
-                </div> 
+                </div>
                 <div class="col-md-6 col-lg-4 branding">
                     <div class="portfolio-item">
-                        <img src="assets/imgs/branding-2.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">  
+                        <img src="assets/imgs/branding-2.jpg" class="img-fluid"
+                            alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
                         <div class="content-holder">
                             <a class="img-popup" href="assets/imgs/branding-2.jpg"></a>
                             <div class="text-holder">
@@ -362,11 +586,12 @@
                                 <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
                             </div>
                         </div>
-                    </div>                                                     
-                </div> 
+                    </div>
+                </div>
                 <div class="col-md-6 col-lg-4 branding new">
                     <div class="portfolio-item">
-                        <img src="assets/imgs/branding-3.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">   
+                        <img src="assets/imgs/branding-3.jpg" class="img-fluid"
+                            alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
                         <div class="content-holder">
                             <a class="img-popup" href="assets/imgs/branding-3.jpg"></a>
                             <div class="text-holder">
@@ -374,11 +599,12 @@
                                 <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
                             </div>
                         </div>
-                    </div>                                                    
-                </div> 
+                    </div>
+                </div>
                 <div class="col-md-6 col-lg-4 branding">
                     <div class="portfolio-item">
-                        <img src="assets/imgs/branding-4.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                      
+                        <img src="assets/imgs/branding-4.jpg" class="img-fluid"
+                            alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
                         <div class="content-holder">
                             <a class="img-popup" href="assets/imgs/branding-4.jpg"></a>
                             <div class="text-holder">
@@ -386,11 +612,12 @@
                                 <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
                             </div>
                         </div>
-                    </div>                                                      
-                </div> 
+                    </div>
+                </div>
                 <div class="col-md-6 col-lg-4 branding">
                     <div class="portfolio-item">
-                        <img src="assets/imgs/branding-5.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">          
+                        <img src="assets/imgs/branding-5.jpg" class="img-fluid"
+                            alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
                         <div class="content-holder">
                             <a class="img-popup" href="assets/imgs/branding-5.jpg"></a>
                             <div class="text-holder">
@@ -398,10 +625,10 @@
                                 <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
                             </div>
                         </div>
-                    </div>                                                   
+                    </div>
                 </div>
-            </div>   
-        </div>            
+            </div>
+        </div>
     </section>
     <!-- End of portfolio section -->
 
@@ -415,7 +642,7 @@
                 <div class="col-md-4">
                     <div class="card border-0 mb-4">
                         <img src="assets/imgs/blog-1.jpg" alt="" class="card-img-top w-100">
-                        <div class="card-body">                         
+                        <div class="card-body">
                             <h6 class="card-title">Pariatur Omnis Harum quae sint.</h6>
                             <p>Fuga quae ratione inventore Perferendis porro.</p>
                             <a href="javascript:void(0)" class="small text-muted">Go To The Article</a>
@@ -425,17 +652,17 @@
                 <div class="col-md-4">
                     <div class="card border-0 mb-4">
                         <img src="assets/imgs/blog-2.jpg" alt="" class="card-img-top w-100">
-                        <div class="card-body">                         
+                        <div class="card-body">
                             <h6 class="card-title"> Harum Quae Porro</h5>
-                            <p>Fuga quae ratione inventore Perferendis porro.</p>
-                            <a href="javascript:void(0)" class="small text-muted">Go To The Article</a>
+                                <p>Fuga quae ratione inventore Perferendis porro.</p>
+                                <a href="javascript:void(0)" class="small text-muted">Go To The Article</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card border-0 mb-4">
                         <img src="assets/imgs/blog-3.jpg" alt="" class="card-img-top w-100">
-                        <div class="card-body">                         
+                        <div class="card-body">
                             <h6 class="card-title">Qui optio neque alias</h6>
                             <p>Fuga quae ratione inventore Perferendis porro.</p>
                             <a href="javascript:void(0)" class="small text-muted">Go To The Article</a>
@@ -460,10 +687,11 @@
                                 <img class="mr-3" src="assets/imgs/avatar.jpg" alt="">
                                 <div class="media-body">
                                     <h6 class="mt-1 mb-0">John Doe</h6>
-                                    <small class="text-muted mb-0">Business Analyst</small>     
+                                    <small class="text-muted mb-0">Business Analyst</small>
                                 </div>
                             </div>
-                            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus enim modi, id dicta reiciendis itaque.</p>
+                            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus enim
+                                modi, id dicta reiciendis itaque.</p>
                         </div>
                     </div>
                 </div>
@@ -474,10 +702,11 @@
                                 <img class="mr-3" src="assets/imgs/avatar-1.jpg" alt="">
                                 <div class="media-body">
                                     <h6 class="mt-1 mb-0">Maria Garcia</h6>
-                                    <small class="text-muted mb-0">Insurance Agent</small>      
+                                    <small class="text-muted mb-0">Insurance Agent</small>
                                 </div>
                             </div>
-                            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus enim modi, id dicta reiciendis itaque.</p>
+                            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus enim
+                                modi, id dicta reiciendis itaque.</p>
                         </div>
                     </div>
                 </div>
@@ -488,10 +717,11 @@
                                 <img class="mr-3" src="assets/imgs/avatar-2.jpg" alt="">
                                 <div class="media-body">
                                     <h6 class="mt-1 mb-0">Mason Miller</h6>
-                                    <small class="text-muted mb-0">Residential Appraiser</small>        
+                                    <small class="text-muted mb-0">Residential Appraiser</small>
                                 </div>
                             </div>
-                            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus enim modi, id dicta reiciendis itaque.</p>
+                            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus enim
+                                modi, id dicta reiciendis itaque.</p>
                         </div>
                     </div>
                 </div>
@@ -520,39 +750,47 @@
                         <h4 class="mb-4">Drop Us A Line</h4>
                         <div class="form-row">
                             <div class="form-group col-sm-4">
-                                <input type="text" class="form-control text-white rounded-0 bg-transparent" name="name" placeholder="Name">
+                                <input type="text" class="form-control text-white rounded-0 bg-transparent" name="name"
+                                    placeholder="Name">
                             </div>
                             <div class="form-group col-sm-4">
-                                <input type="email" class="form-control text-white rounded-0 bg-transparent" name="Email" placeholder="Email">
+                                <input type="email" class="form-control text-white rounded-0 bg-transparent"
+                                    name="Email" placeholder="Email">
                             </div>
                             <div class="form-group col-sm-4">
-                                <input type="text" class="form-control text-white rounded-0 bg-transparent" name="subject" placeholder="Subject">
+                                <input type="text" class="form-control text-white rounded-0 bg-transparent"
+                                    name="subject" placeholder="Subject">
                             </div>
                             <div class="form-group col-12">
-                                <textarea name="message" id="" cols="30" rows="4" class="form-control text-white rounded-0 bg-transparent" placeholder="Message"></textarea>
+                                <textarea name="message" id="" cols="30" rows="4"
+                                    class="form-control text-white rounded-0 bg-transparent"
+                                    placeholder="Message"></textarea>
 
                             </div>
                             <div class="form-group col-12 mb-0">
                                 <button type="submit" class="btn btn-primary rounded w-md mt-3">Send</button>
-                            </div>                          
-                        </div>                          
+                            </div>
+                        </div>
                     </form>
                 </div>
             </div>
             <!-- Page Footer -->
             <footer class="mt-5 py-4 border-top border-secondary">
-                <p class="mb-0 small">&copy; <script>document.write(new Date().getFullYear())</script>, Blitz Vision Created By <a href="#" target="_blank">Cool Joe.</a>  All rights reserved </p>     
+                <p class="mb-0 small">&copy;
+                    <script>document.write(new Date().getFullYear())</script>, Blitz Vision Created By <a href="#"
+                        target="_blank">Cool Joe.</a> All rights reserved
+                </p>
             </footer>
-            <!-- End of Page Footer -->  
+            <!-- End of Page Footer -->
         </div>
     </section>
-	
-	<!-- core  -->
+
+    <!-- core  -->
     <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
     <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
 
     <!-- bootstrap 3 affix -->
-	<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
 
     <!-- Isotope -->
     <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
@@ -561,4 +799,5 @@
     <script src="assets/js/leadmark.js"></script>
 
 </body>
+
 </html>
