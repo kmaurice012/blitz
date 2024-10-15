@@ -11423,7 +11423,7 @@ textarea.form-control {
   position: relative;
   height: 100vh;
   min-height: 500px;
-  background: url(../imgs/header.jpg) no-repeat center center fixed;
+  /* background: url(../imgs/header.jpg) no-repeat center center fixed; */
   background-size: cover;
   overflow: hidden;
 }
@@ -11922,7 +11922,7 @@ textarea.form-control {
 .ag-courses-item_bg {
   height: 128px;
   width: 128px;
-  background-color: #f9b234;
+  background-color: #e44002;
 
   z-index: 1;
   position: absolute;
@@ -11937,7 +11937,7 @@ textarea.form-control {
 }
 
 .ag-courses_item:nth-child(2n) .ag-courses-item_bg {
-  background-color: #3ecd5e;
+  background-color: #e44002;
 }
 
 .ag-courses_item:nth-child(3n) .ag-courses-item_bg {
@@ -11945,15 +11945,15 @@ textarea.form-control {
 }
 
 .ag-courses_item:nth-child(4n) .ag-courses-item_bg {
-  background-color: #952aff;
+  background-color: #e44002;
 }
 
 .ag-courses_item:nth-child(5n) .ag-courses-item_bg {
-  background-color: #cd3e94;
+  background-color: #e44002;
 }
 
 .ag-courses_item:nth-child(6n) .ag-courses-item_bg {
-  background-color: #4c49ea;
+  background-color: #e44002;
 }
 
 

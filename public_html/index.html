@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="assets/css/leadmark.css">
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+<body class="welcome" data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 
     <!-- page Navigation -->
     <nav class="navbar custom-navbar navbar-expand-md navbar-light fixed-top" data-spy="affix" data-offset-top="10">
@@ -52,7 +52,16 @@
     </nav>
     <!-- End Of Second Navigation -->
     <!-- Page Header -->
-    <header class="header">
+    <header class="header" style="position: relative; height: 100vh; overflow: hidden;">
+        <div class="video-container"
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; overflow: hidden;">
+            <iframe
+                src="https://www.youtube.com/embed/tfwE-PLRMrU?autoplay=1&mute=1&loop=1&playlist=tfwE-PLRMrU&controls=0&showinfo=0&modestbranding=1"
+                style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; pointer-events: none;"
+                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+
+        </div>
         <div class="overlay">
             <div class="stack" style="--stacks: 3;">
                 <span class="subtitle" style="--index: 0;">Blitz Vision</span>
@@ -71,6 +80,7 @@
             <div class="wheel"></div>
         </div>
     </header>
+
     <!-- End Of Page Header -->
 
     <!-- Service Section -->
@@ -78,68 +88,69 @@
         <div class="container">
             <!-- <div style="line-height: 1.2; min-height: 50vh; display: grid; place-items: center; box-sizing: border-box;"> -->
             <div
-                style="padding: 4rem; text-align: center; background: radial-gradient(circle at 1.4% 1.4%, #186cb8 .8%, transparent .8%), radial-gradient(circle at 5.5% 3%, #2a9a9f .45%, transparent .45%), radial-gradient(circle at 2.5% 3.5%, #f1b211 .5%, transparent .5%), radial-gradient(circle at 4.5% 1.2%, #e83611 .25%, transparent .25%), radial-gradient(circle at 98% 98%, #186cb8 .8%, transparent .8%), radial-gradient(circle at 95% 95%, #2a9a9f .45%, transparent .45%), radial-gradient(circle at 94.5% 97.5%, #f1b211 .5%, transparent .5%), radial-gradient(circle at 98.5% 95.5%, #e83611 .25%, transparent .25%);">
+                style="padding: 4rem; text-align: center; background: radial-gradient(circle at 1.4% 1.4%, #2D1E2F .8%, transparent .8%), radial-gradient(circle at 5.5% 3%, #e83611 .45%, transparent .45%), radial-gradient(circle at 2.5% 3.5%, #3E363F .5%, transparent .5%), radial-gradient(circle at 4.5% 1.2%, #E3170A .25%, transparent .25%), radial-gradient(circle at 98% 98%, #2D1E2F .8%, transparent .8%), radial-gradient(circle at 95% 95%, #e83611 .45%, transparent .45%), radial-gradient(circle at 94.5% 97.5%, #3E363F .5%, transparent .5%), radial-gradient(circle at 98.5% 95.5%, #E3170A .25%, transparent .25%);">
                 <h1
-                    style="font-family: 'Exo', sans-serif; font-size: 4vw; font-weight: 900; margin: auto; text-transform: uppercase; background: linear-gradient(219deg, #186cb8 19%, transparent 19%, transparent 20%, #2a9a9f 20%, #2a9a9f 39%, transparent 39%, transparent 40%, #f1b211 40%, #f1b211 59%, transparent 59%, transparent 60%, #e83611 60%, #e83611 79%, transparent 79%, transparent 80%, #f9002f 80%); background-clip: text; -webkit-background-clip: text; color: transparent;">
+                    style="font-family: 'Exo', sans-serif; font-size: 4vw; font-weight: 900; margin: auto; text-transform: uppercase; background: linear-gradient(219deg, #2D1E2F 19%, transparent 19%, transparent 20%, #e83611 20%, #e83611 39%, transparent 39%, transparent 40%, #3E363F 40%, #3E363F 59%, transparent 59%, transparent 60%, #E3170A 60%, #E3170A 79%, transparent 79%, transparent 80%, #f9002f 80%); background-clip: text; -webkit-background-clip: text; color: transparent;">
                     Keep pushing forward.<br>We've got your back
                 </h1>
-            </div>
-            <!-- </div> -->
 
-            <div class="ag-format-container">
-                <div class="ag-courses_box">
-                    <div class="ag-courses_item">
-                        <a href="#" class="ag-courses-item_link">
-                            <div class="ag-courses-item_bg"></div>
-                            <div class="ag-courses-item_title">
-                                Digital Billboard Advertising
-                            </div>
-                        </a>
-                    </div>
+                <!-- </div> -->
 
-                    <div class="ag-courses_item">
-                        <a href="#" class="ag-courses-item_link">
-                            <div class="ag-courses-item_bg"></div>
-                            <div class="ag-courses-item_title">
-                                In-Mall Digital Displays
-                            </div>
-                        </a>
-                    </div>
+                <div class="ag-format-container" style="margin-top: 40px;">
+                    <div class="ag-courses_box">
+                        <div class="ag-courses_item">
+                            <a href="#" class="ag-courses-item_link">
+                                <div class="ag-courses-item_bg"></div>
+                                <div class="ag-courses-item_title">
+                                    Digital Billboard Advertising
+                                </div>
+                            </a>
+                        </div>
 
-                    <div class="ag-courses_item">
-                        <a href="#" class="ag-courses-item_link">
-                            <div class="ag-courses-item_bg"></div>
-                            <div class="ag-courses-item_title">
-                                Event-Based Advertising
-                            </div>
-                        </a>
-                    </div>
+                        <div class="ag-courses_item">
+                            <a href="#" class="ag-courses-item_link">
+                                <div class="ag-courses-item_bg"></div>
+                                <div class="ag-courses-item_title">
+                                    In-Mall Digital Displays
+                                </div>
+                            </a>
+                        </div>
 
-                    <div class="ag-courses_item">
-                        <a href="#" class="ag-courses-item_link">
-                            <div class="ag-courses-item_bg"></div>
-                            <div class="ag-courses-item_title">
-                                Data-Driven Campaigns
-                            </div>
-                        </a>
-                    </div>
+                        <div class="ag-courses_item">
+                            <a href="#" class="ag-courses-item_link">
+                                <div class="ag-courses-item_bg"></div>
+                                <div class="ag-courses-item_title">
+                                    Event-Based Advertising
+                                </div>
+                            </a>
+                        </div>
 
-                    <div class="ag-courses_item">
-                        <a href="#" class="ag-courses-item_link">
-                            <div class="ag-courses-item_bg"></div>
-                            <div class="ag-courses-item_title">
-                                Creative Content Production
-                            </div>
-                        </a>
-                    </div>
+                        <div class="ag-courses_item">
+                            <a href="#" class="ag-courses-item_link">
+                                <div class="ag-courses-item_bg"></div>
+                                <div class="ag-courses-item_title">
+                                    Data-Driven Campaigns
+                                </div>
+                            </a>
+                        </div>
 
-                    <div class="ag-courses_item">
-                        <a href="#" class="ag-courses-item_link">
-                            <div class="ag-courses-item_bg"></div>
-                            <div class="ag-courses-item_title">
-                                Media Planning & Buying
-                            </div>
-                        </a>
+                        <div class="ag-courses_item">
+                            <a href="#" class="ag-courses-item_link">
+                                <div class="ag-courses-item_bg"></div>
+                                <div class="ag-courses-item_title">
+                                    Creative Content Production
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="ag-courses_item">
+                            <a href="#" class="ag-courses-item_link">
+                                <div class="ag-courses-item_bg"></div>
+                                <div class="ag-courses-item_title">
+                                    Media Planning & Buying
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -151,7 +162,43 @@
     <!-- About Section -->
     <section class="section" id="about">
         <div class="container">
-            <div class="row justify-content-between">
+            <div>
+                <p style="    font-weight: 400;
+                font-size: 4rem;
+                line-height: 1.1;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                font-family: Montserrat, sans-serif;">About Us</p>
+            </div>
+            <hr style="border: 1px solid black; width: 100%;">
+
+            <div style="display: flex; justify-content: center; width: 100%; flex-direction:">
+                <div style="width: 60%; 
+            margin-top: 20px;
+            margin-bottom: 20px;
+          ">
+                    <p style="font-weight: 400;
+            font-size: 2rem;
+            line-height: 1.2;">We Offer comprehensive marketing services including content cretion,ad campaign
+                        development ,social media
+                        management and perfomance analytics</p>
+                        <div style="width: 70%; text-align: end;     margin-left: 70px;">
+                            <p style="padding-left: 100px; padding-top: 100px;     font-size: 1.25rem;
+                            line-height: 1.2;
+                           
+                            font-weight: 400;">We are a creative agency that has won awards and worked on over 300 projects.</p> 
+                                                         <a href="/components.html" style="width: 40%;     position: relative;
+                                                         right: 0;
+                                                         left: 250px;" class="ml-4 nav-link btn btn-primary btn-sm rounded">More..</a>
+
+                        </div>
+                    <!-- <p style="padding-left: 100px; padding-top: 100px;">We are a creative agency that has won awards and worked on over 300 projects.</p> -->
+                </div>
+                <div style="width: 40%;">
+                    <img src="assets/imgs/market.jpg" alt="" class="w-100 shadow-sm">
+                </div>
+            </div>
+            <!-- <div class="row justify-content-between">
                 <div class="col-md-6 pr-md-5 mb-4 mb-md-0">
                     <h6 class="section-title mb-0">About Blitz Vision</h6>
                     <p>Blitz Vision was founded with a single goal in mind: to revolutionize outdoor advertising by
@@ -181,7 +228,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
     <!-- End OF About Section -->
@@ -189,9 +236,19 @@
     <!-- Portfolio Section -->
     <section id="portfolio" class="section portfolio-section">
         <div class="container">
-            <h6 class="section-title text-center">Our Portfolio</h6>
-            <h6 class="section-subtitle mb-5 text-center">New stunning projects for our amazing clients</h6>
-            <div class="filters">
+            <div>
+                <p style="    font-weight: 400;
+                font-size: 4rem;
+                line-height: 1.1;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                font-family: Montserrat, sans-serif;">Our Portfolio</p>
+            </div>
+            <hr style="border: 1px solid black; width: 100%;">
+
+            <!-- <h6 class="section-title text-center">Our Portfolio</h6> -->
+            <!-- <h6 class="section-subtitle mb-5 text-center">New stunning projects for our amazing clients</h6> -->
+            <!-- <div class="filters">
                 <a href="#" data-filter=".new" class="active">
                     New
                 </a>
@@ -204,8 +261,8 @@
                 <a href="#" data-filter=".web">
                     Web
                 </a>
-            </div>
-            <div class="portfolio-container">
+            </div> -->
+            <div class="portfolio-container" style="margin-top: 40px;">
                 <div class="col-md-6 col-lg-4 web new">
                     <div class="portfolio-item">
                         <img src="assets/imgs/web-1.jpg" class="img-fluid"
@@ -385,8 +442,17 @@
     <!-- Blog Section -->
     <section class="section" id="blog">
         <div class="container">
-            <h6 class="section-title mb-0 text-center">Latest Articles</h6>
-            <h6 class="section-subtitle mb-5 text-center">Architecto provident deserunt eveniet libero</h6>
+            <div>
+                <p style="    font-weight: 400;
+                font-size: 4rem;
+                line-height: 1.1;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                font-family: Montserrat, sans-serif;">Latest Articles</p>
+            </div>
+            <hr style="border: 1px solid black; width: 100%; margin-bottom: 40px;">
+            <!-- <h6 class="section-title mb-0 text-center">Latest Articles</h6>
+            <h6 class="section-subtitle mb-5 text-center">Architecto provident deserunt eveniet libero</h6> -->
 
             <div class="row">
                 <div class="col-md-4">
@@ -427,8 +493,16 @@
     <!-- Testmonial Section -->
     <section class="section" id="testmonial">
         <div class="container">
-            <h6 class="section-title text-center mb-0">Testmonials</h6>
-            <h6 class="section-subtitle mb-5 text-center">What Our Clients Says</h6>
+            <div>
+                <p style="    font-weight: 400;
+                font-size: 4rem;
+                line-height: 1.1;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                font-family: Montserrat, sans-serif;">Testmonials</p>
+            </div>
+
+            <hr style="border: 1px solid black; width: 100%; margin-bottom: 40px;">
             <div class="row">
                 <div class="col-md-4 my-3 my-md-0">
                     <div class="card">
