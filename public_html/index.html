@@ -55,12 +55,11 @@
     <header class="header" style="position: relative; height: 100vh; overflow: hidden;">
         <div class="video-container"
             style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; overflow: hidden;">
-            <iframe
-                src="https://www.youtube.com/embed/tfwE-PLRMrU?autoplay=1&mute=1&loop=1&playlist=tfwE-PLRMrU&controls=0&showinfo=0&modestbranding=1"
-                style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; pointer-events: none;"
-                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-
+            <video autoplay muted loop playsinline
+                style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; object-fit: cover; pointer-events: none;">
+                <source src="assets/imgs/splash.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
         </div>
         <div class="overlay">
             <div class="stack" style="--stacks: 3;">
@@ -68,7 +67,7 @@
                 <span class="subtitle" style="--index: 1;">Blitz Vision</span>
                 <span class="subtitle" style="--index: 2;">Blitz Vision</span>
             </div>
-            <h1 class="title typing-demo" style="text-align: center;"> Engage, Inspire, Impact</h1>
+            <h1 class="title typing-demo" style="text-align: center;">Engage, Inspire, Impact</h1>
         </div>
         <div class="shape">
             <svg viewBox="0 0 1500 200">
@@ -80,6 +79,7 @@
             <div class="wheel"></div>
         </div>
     </header>
+    
 
     <!-- End Of Page Header -->
 
