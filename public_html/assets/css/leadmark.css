@@ -11544,11 +11544,13 @@ textarea.form-control {
 }
 
 .section {
-  padding: 80px 0;
+  /* padding: 80px 0; */
+  /* margin-top: 50px; */
+
 }
 
 .section:nth-child(even) {
-  background: #f5f8fc;
+  /* background: #f5f8fc; */
 }
 
 .section .section-devider {
